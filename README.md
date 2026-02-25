@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Assignment: Scroll-Driven Hero Section Animation
 
-## Getting Started
+Objective
 
-First, run the development server:
+The goal of this assignment is to evaluate your understanding of frontend animations, scroll-based interactions, and smooth UI behavior using vanilla web technologies.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You are required to recreate the hero section animation inspired by the given reference, focusing on motion quality, smoothness, and interaction logic.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Functional Requirements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Hero Section Layout
 
-## Learn More
+The hero section should occupy the first screen (above the fold).
 
-To learn more about Next.js, take a look at the following resources:
+Display a letter-spaced headline similar to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+W E L C O M E I T Z F I Z Z
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Below the headline, show impact metrics / statistics (percentages with short descriptions).
 
-## Deploy on Vercel
+2. Initial Load Animation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+On page load:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The headline should appear smoothly (fade + slight movement or staggered reveal).
+
+The statistics should animate in one by one with a subtle delay.
+
+Animations must feel smooth and premium, not abrupt.
+
+3. Scroll-Based Animation (Core Feature)
+
+The hero section should respond to page scroll.
+
+As the user scrolls:
+
+The main visual element (image/object) should move smoothly based on scroll position.
+
+Animation should be tied to scroll progress (not time-based autoplay).
+
+Use easing/interpolation so motion feels natural and fluid.
+
+4. Motion & Performance Guidelines
+
+Animations must be smooth and performant.
+
+Prefer transform properties (translate, scale, rotate) for animations.
+
+Avoid heavy calculations or layout reflows on every scroll event.
+
+Tech Stack (Mandatory)
+
+HTML
+
+CSS
+
+JavaScript
+
+GSAP (for smoother scroll or intro animations)
+
+Next.js/React.js
+
+Tailwind
+
+Plus Points (Optional)
+
+Bootstrap (for layout help)
+
+WordPress (if implemented as a theme or template)
+
+Submission Instructions
+
+Host the project on a free platform (GitHub Pages preferred).
+
+Code should be clean, readable, and well-structured.
