@@ -95,7 +95,6 @@ export default function Hero() {
   }, []);
 
   return (
-    // 300vh outer wrapper gives scroll room while the inner div stays sticky
     <div style={{ height: "300vh" }}>
       <div
         ref={sectionRef}
@@ -103,18 +102,17 @@ export default function Hero() {
         style={{ backgroundColor: "#D4D4D0" }}
       >
 
-        {/* Top stat cards */}
         <div ref={topStatsRef} className="flex justify-center gap-3 px-10 mb-4">
           <StatCard value="58%" label="Increase in pick up point use" bgColor="#C8F135" />
           <StatCard value="27%" label="Increase in pick up point use" bgColor="#222222" textColor="#fff" />
         </div>
 
-        {/* Green band */}
+       
         <div
           className="relative overflow-hidden flex items-center"
           style={{ height: "clamp(100px, 22vh, 200px)", backgroundColor: "#3DBD5E" }}
         >
-          {/* WELCOME ITZFIZZ text — drifts left on scroll */}
+          
           <div
             ref={textRef}
             className="absolute inset-y-0 left-0 flex items-center pl-5 whitespace-nowrap will-change-transform"
@@ -128,17 +126,13 @@ export default function Hero() {
             </h1>
           </div>
 
-          {/* Car — drives right to left on scroll, sits above text */}
+         
           <div
             ref={carRef}
             className="absolute top-1/2 -translate-y-1/2 will-change-transform"
             style={{ width: "clamp(280px, 40vw, 560px)", zIndex: 20 }}
           >
-            {/*
-              FIX 2: Don't use process.env for /public assets.
-              Next.js Image component automatically applies basePath
-              from next.config.ts — just use the plain filename.
-            */}
+            
             <Image
               src="/mclaren.png"
               alt="McLaren car"
