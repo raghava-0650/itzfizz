@@ -121,7 +121,12 @@ export default function Hero() {
               className="absolute top-1/2 -translate-y-1/2 will-change-transform z-20"
               style={{ width: "clamp(280px, 40vw, 560px)" }}
             >
-              <Image src="/mclaren.png" alt="McLaren car" width={760} height={200} />
+              <Image 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/mclaren.png`}
+                alt="McLaren car"
+                width={760}
+                height={200}
+              />
             </div>
           </div>
 
